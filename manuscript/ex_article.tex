@@ -65,7 +65,7 @@ The difficulty in modeling the process of speciation using any species interacti
 A fundamental observation of real biological systems is that most of the time individuals are clearly grouped into distinct species. Thus, it is natural to take the species as the fundamental unit of any eco-evolutionary model. However, another observation is that over evolutionary time speciation events do occur. Hence, from the time there is only the parent species to the time when increasingly diverging traits among the constituent individuals has resulted in new child species, the natural unit to consider is instead the individual (or population). These observations form the basis of our developments; most of the time we assume the species level formulation is the correct description of a given biological system (i.e., distinct species evolve as species), and only for the (short) intermediate time interval between the existence of parent and child species, we temporarily discard the species-centric view and instead regard the relevant population as trait specific distributions. 
 %In other words, when the population density function of the population takes the form of compactly supported local maxima, its dynamics can be reasonably approximated by the species level model, but this approximation becomes increasingly inaccurate as the population density deviates from this state (e.g., formation of a saddle point), eventually leading to a model breakdown if the deviation is large enough.  
 
-The species-interaction model we take as the starting point is formulated as a system of ordinary differential equations (ODE) describing the dynamics of a biological system in which any finite number of species interact and evolve adaptively over evolutionary time (referred to in the sequel as the \emph{species level}, SLM, or \emph{macro-scale} model). This model extends the Lotka-Volterra system by representing each species not only by its abundance, but also by its mean traits coordinate and trait covariance matrix. It originates in a recent work by two of the authors~\cite{nordbotten2016asymmetric}, wherein the model equations were derived by applying a moment closure averaging technique on a deterministic trait-specific population density model (referred to in the sequel as the \emph{population level}, PLM, or \emph{micro-scale} model), under the assumption that distinct species can be identified at all times (see also related derivations in~\cite{debarre2014multidimensional,sasaki2011oligomorphic}). The population level model is formulated as a partial differential equation (PDE), and governs the abundance density as a function of evolutionary traits. Moreover, the authors showed that the species and population level models are consistent, i.e., they describe the same system dynamics as long as the system behavior is such that both models are valid. Still, these descriptions are fundamentally different in that they operate on separate scales; the species level model operates with the coarser unit of distinct species, while the population level model operates with the finer unit of the individual (i.e., the category of species is not imposed upon the individuals who make up the population). Thus, the species level model described above approximates the system dynamics governed by the population level model, under the condition that the population can be grouped into distinct species. Note also that due to the deterministic nature of the population level model, this property is also inherited at the species level.
+The species-interaction model we take as the starting point is formulated as a system of ordinary differential equations (ODE) describing the dynamics of a biological system in which any finite number of species interact and evolve adaptively over evolutionary time (referred to in the sequel as the \emph{species level}, SLM, or \emph{macro-scale} model). This model extends the Lotka-Volterra system by representing each species not only by its abundance, but also by its mean traits coordinate and trait covariance matrix. It originates in a recent work by two of the authors~\cite{nordbotten2016asymmetric}, wherein the model equations were derived by applying a moment closure averaging technique on a deterministic trait-specific population density model (referred to in the sequel as the \emph{population level}, PLM, or \emph{micro-scale} model), \red{under the assumptions that (A1) distinct species can be identified at all times, and (A2) that the species distributions are of a known statistical quality (in this case, the normal distribution.} see also related derivations in~\cite{debarre2014multidimensional,sasaki2011oligomorphic}). The population level model is formulated as a partial differential equation (PDE), and governs the abundance density as a function of evolutionary traits. Moreover, the authors showed that the species and population level models are consistent, i.e., they describe the same system dynamics as long as the system behavior is such that both models are valid. Still, these descriptions are fundamentally different in that they operate on separate scales; the species level model operates with the coarser unit of distinct species, while the population level model operates with the finer unit of the individual (i.e., the category of species is not imposed upon the individuals who make up the population). Thus, the species level model described above approximates the system dynamics governed by the population level model, under the conditions that the population can be grouped into distinct species, \red{and that each species' distribution conforms to a normal distribution}. Note also that due to the deterministic nature of the population level model, this property is also inherited at the species level.
 
 The first part of our developments concerns monitoring the species in the system and estimating the deviation from the true population density function. We do this as follows: Since each species is described by an abundance-trait-covariance tuple, we map these to time dependent distributions. Then, using derived a posteriori error estimates of the population level model, we track the modeling error of each species' associated distribution function. The second part concerns the case of residual blow-up, which implies a model breakdown at the species level, here associated with a speciation event. Concerning the actual speciation event we compare two different approaches with regards to splitting the parent species into new child species;
 (1) \emph{Heuristic approach}: When a residual blow-up is detected, we proceed to split the relevant reconstructed distribution function along the trait directions orthogonal to the direction of divergence. Each of these sub-distributions are then mapped back to abundance-trait-variance tuples, thus yielding the new child species to be incorporated at the species level. (2) \emph{Multi-scale approach}: When a residual blow-up is detected, we delegate the relevant species' reconstructed density function to the population level model to be solved in an appropriate local region of trait space while coupled to the species level model which governs the interaction of the remaining species in the system. Simultaneously, we map the local abundance density function to  abundance-trait-variance tuples and measure the distance between the mean trait coordinates. At such time when the new child species are sufficiently separated in trait space (e.g., by a multiple of the maximum trait standard deviation), we incorporate the new child species at the species level and decouple the multi-scale model. We assess the accuracy of each approach by comparing the species parameters (pre- and post-speciation) to the corresponding moments of the reference (global) PLM solution. 
@@ -102,7 +102,7 @@ The ecological processes consists of the growth term, $-rn$, where $r : \Omega_T
 \Phi(n)n := bn^2 - n \int_\Omega \alpha(x,y,t)n(y,t)\dy,
 \end{equation}
 where $b : \Omega_T \rightarrow \real_{\geq 0}$ is the local individual limitation coefficient, 
-and $\alpha : \Omega \times \Omega_T \rightarrow \real$ is the non-local individual interaction coefficient, i.e., $\alpha(x,y,t)$ is the effect of an individual with trait coordinate $y$ on an individual with trait coordinate $x$. The diffusive term represents the evolutionary process, where $g : \Omega_T \rightarrow \real^{d\times d}$ is the intergenerational trait diffusion coefficient. Generally speaking, the model equation \eqref{PDE} belongs to the class of reaction-diffusion type parabolic conservation equations (in this case, with a non-local reaction term). Since homogenous boundary conditions of Dirichlet type is always justified from a biological perspective given a large enough trait domain $\Omega$, we shall only consider this situation for the present purposes. We let initial data be specified by $n(x,0) = n_0(x)$. The PLM then reads as the following initial/boundary value problem:
+and $\alpha : \Omega \times \Omega_T \rightarrow \real$ is the non-local individual interaction coefficient, i.e., $\alpha(x,y,t)$ is the effect of an individual with trait coordinate $y$ on an individual with trait coordinate $x$. The diffusive term represents the evolutionary process, where $g : \Omega_T \rightarrow \real^{d\times d}$ is the intergenerational trait diffusion \red{tensor}. Generally speaking, the model equation \eqref{PDE} belongs to the class of reaction-diffusion type parabolic conservation equations (in this case, with a non-local reaction term). Since homogenous boundary conditions of Dirichlet type is always justified from a biological perspective given a large enough trait domain $\Omega$, we shall only consider this situation for the present purposes. We let initial data be specified by $n(x,0) = n_0(x)$. The PLM then reads as the following initial/boundary value problem:
 
 Find $n:\Omega_T \rightarrow \real$ such that $n \geq 0$ and
 \bse
@@ -166,7 +166,7 @@ In practice, the problem \eqref{ODEmodel}--\eqref{ODEmodelIC} can be reduced to 
 %The distinction should be clear from the context.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Relationship between population and species level models}
-If there is a time interval $J := (t_{0},t_1) \subset (0,T)$ where $s \geq 1$ species can unambiguously be identified, there exists a collection of non-overlapping (possibly time dependent), open and bounded regions in trait space, i.e., $\{B_i \subset \Omega, i \leq s,  B_i \cap B_j = \emptyset, i \neq j\}$, where the population density is compactly supported and contains only one local maximum. Thus, if we let $\mu_{B_i}^k(n)$, be the $k$'th order moment of $n$ (for $k \in \{0,1,2\}$), within the region $B_i$, i.e.,
+If there is a time interval $J := (t_{0},t_1) \subset (0,T)$ where $s \geq 1$ species can unambiguously be identified, there exists a collection of non-overlapping (possibly time dependent), open and bounded regions in trait space, i.e., $\{B_i \subset \Omega, i \leq s,  B_i \cap B_j = \emptyset, i \neq j\}$, where the population density is compactly supported and contains only one local maximum. Thus, if we let $\mu_{B_i}^k(n)$, be the $k$'th order moment of $n$ (for $k \in \{0,1,2\}$, \red{and assuming $n$ is smooth enough for these moments to exist}), within the region $B_i$, i.e.,
 \bse
 \begin{alignat}{1}
 \mu_{B_i}^0(n) &:= \int_{B_i} n(x)\dx,\label{m0}\\ 
@@ -407,7 +407,7 @@ Due to the nonlinear nature of the model equation \eqref{weak_form}, the norm of
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Uniqueness}\label{WPuniqueness}
 It remains to show the uniqueness of $n^k$. To this end, we suppose that
-$\psi$ satisfies~\eqref{weak_form}, which implies that $\vertiii{\mathcal{R}^k(\psi)}_{k^\ast}=0$. Thanks to the identity~\eqref{res_error}, we obtain that $\psi=n^{k}$ in $X_k$. This section concludes the proof of Theorem~\ref{thm:wellposed}.
+$\psi$ satisfies~\eqref{weak_form}, which implies that $\vertiii{\mathcal{R}^k(\psi)}_{k^\ast}=0$. \red{Then, thanks to the identity~\eqref{res_error}, and since $\vertiii{\Rcal^k(\psi)}^2_{k^\ast}$ is convex due to the monotonicity condition~\eqref{monotonicity}, we obtain that $\psi=n^{k}$ in $X_k$.} This section concludes the proof of Theorem~\ref{thm:wellposed}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A posteriori error bound}\label{sec:eestimates}
 In this section we adopt energy-type a posteriori error bounds based on the dual norm of the residual for the weak time-discrete PLM, i.e., the problem \eqref{weak_form} using similar techniques as in~\cite{ern2017guaranteed,ern2010posteriori,papevz2018estimating,smears2020simple}. We then provide a guaranteed and fully computable upper bound on the energy--type error in terms of various error estimators, using suitable flux and density reconstructions.
@@ -540,7 +540,7 @@ If at time $t_k$ there is detected diverging traits within a species $N_i^k$, we
 \begin{equation}
 N_{i,j}^k := (\mu_{B_{i,\nu}^{k,j}}^0(\Dcal N^k_i),\mu_{B_{i,\nu}^{k,j}}^1(\Dcal N^k_i),\mu_{B_{i,\nu}^{k,j}}^2(\Dcal N^k_i)).
 \end{equation}
-The figure \ref{fig1:bi} below shows the splitting of an example density region in 2D, where $x_i^k = (0,0)$ and $\upsilon_i^k = \diag(\upsilon_{i,11}^k, \upsilon_{i,22}^k)$.
+Figure \ref{fig1:bi} below shows the splitting of an example density region in 2D, where $x_i^k = (0,0)$ and $\upsilon_i^k = \diag(\upsilon_{i,11}^k, \upsilon_{i,22}^k)$.
 \begin{figure}[h]
 \centering
 \begin{subfigure}{.45\textwidth}
@@ -613,7 +613,7 @@ s_h^k := \sum_{i=1}^s s^k_{h,i}\in C^{\infty}(\Omega)\cap X_k.
 \end{equation}
 What remains is to construct the equilibrated flux, $\sigmabo_h^k$ satisfying Definition~\ref{fluxequi}. The idea is to reconstruct this equilibrated flux as the sum of a discretization flux $\sigmabo_{h,\textn{disc}}^k$ and the remainder flux $\sigmabo_{h,\textn{rem}}^k$. In this section we assume the source term  $f$ is smooth enough to calculate   the discrete residual for single species, $\mathbf{r}^k_{h,i}$   explicitly,   i.e., for $1\leq i \leq s$, $1\leq k \leq M$, let
 \begin{alignat}{2}
-\mathbf{r}^k_{h,i}&:= \frac{1}{s}(\tau_k f^{k}_h + s_h^{k-1}) -(1 - \tau_kr_h^k)s^{k}_{h,i} -\tau_k\Phi_h^k(s_h^k)s^k_{h,i}+\tau_k\nabla\cdot (g_h^k\nabla s^k_{h,i}),
+\mathbf{r}^k_{h,i}&:= \frac{1}{s}(\tau_k f^{k}_h + s_h^{k-1}) -(1 - \tau_kr_h^k)s^{k}_{h,i} -\tau_k\Phi_h^k(s_h^k)s^k_{h,i}+\tau_k\nabla\cdot (g_h^k\nabla s^k_{h,i}),\label{addlabel1}
 \end{alignat}
 with the global residual defined by $\mathbf{r}^k_{h} := \sum_{i=1}^s\mathbf{r}^k_{h,i}$. The equilibrated discretization flux for species $i$ is then given by
 \begin{equation}\label{def:sigma_disc}
@@ -636,7 +636,7 @@ The following key result shows that $\sigmabo_h^k$ from the above definition lea
 \end{align}
 \end{proposition}
 \begin{proof}
-By construction, we have
+By construction, \red{from relations \eqref{def:species} and \eqref{addlabel1}, we have}
 \bse
 \begin{align}
 \tau_k\nabla \cdot \sigmabo^k_{h,\textn{disc},i}&= \frac{1}{s}(\tau_k f^{k}_h + s_h^{k-1}) -(1 - \tau_kr_h^k)s^{k}_{h,i} -\tau_k\Phi_h^k(s_h^k)s^k_{h,i} - \mathbf{r}^k_{h,i}, \\
@@ -655,7 +655,7 @@ The choice of the equilibrated discretization flux in \eqref{def:sigma_disc} is 
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Distinguishing the error components} 
-The preceding developments leads to the following result.
+The preceding developments \red{lead} to the following result.
 \begin{theorem}[Error components]\label{thm:errorcomponents}
 For the species $i\leq s$, let $s_{k,i}^k$ be the  population density as given in~\eqref{construct_pop_density} and the equilibrated flux  as characterized in~\eqref{ass:equilibration2}.    We have the following a posteriori error bound distinguishing the error components
 For $1\leq k \leq M$, the following estimate holds true 
@@ -750,7 +750,7 @@ g(x,t) &= 5e-6 \times \id.
 \ese
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Simulation}
-With the parameters given in the previous section, we employ both the heuristic and multi-scale speciation algorithms. The figures below shows the species abundance~\ref{ex1:abundance}, the species mean trait coordinates~\ref{ex1:x1}, the largest eigenvalue of the trait covariance matrix~\ref{ex1:variance}, the a posteriori error bound~\ref{ex1:residuals}, and the error in energy norm~\ref{ex1:edist}, as functions of time. 
+With the parameters given in the previous section, we employ both the heuristic and multi-scale speciation algorithms. \red{Figure~\ref{ex1:abundance} below shows the species abundance, figure~\ref{ex1:x1} the species mean trait coordinates, figure~\ref{ex1:variance} the largest eigenvalue of the trait covariance matrix, figure~\ref{ex1:residuals} the a posteriori error bound, and figure~\ref{ex1:edist} the error in energy norm, as functions of time.} 
 
 We observe from the results a very close match between the reference solution and the multi-scale method throughout the simulation time. Indeed, the error in the energy norm, as seen in Figure~\ref{ex1:edist} is lower during the multi-scale window than during the pure SLM simulation, indicating that the modeling error of the SLM in terms of capturing species dynamics dominates over the error associated with the speciation event. In terms of species-level parameters, as shown in the remaining figures, the qualitative match is also quite satisfactory for the multi-scale mathod outside the speciation event (these quantities are of course not defined during the speciation event itself). 
 
@@ -883,7 +883,7 @@ g(x,t) &:= 2e-6\times\id.
 \ese
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Simulation}
-With the parameters given in the previous section, we employ both the heuristic and multi-scale algorithms. The figures below shows the species abundance~\ref{ex2:prey_abundance}--\ref{ex2:pred_abundance}, the species mean trait coordinates~\ref{ex2:prey_x1}--\ref{ex2:prey_x2}, the largest eigenvalue of the trait covariance matrix~\ref{ex2:prey_variance}, and the a posteriori error bounds~\ref{ex2:prey_residuals}--\ref{ex2:pred_residuals}, as functions of time. 
+With the parameters given in the previous section, we employ both the heuristic and multi-scale algorithms. \red{Figures~\ref{ex2:prey_abundance}--\ref{ex2:pred_abundance} below shows the species abundance, figures~\ref{ex2:prey_x1}--\ref{ex2:prey_x2} the species mean trait coordinates, figure~\ref{ex2:prey_variance} the largest eigenvalue of the trait covariance matrix, and figures~\ref{ex2:prey_residuals}--\ref{ex2:pred_residuals} the a posteriori error bounds, as functions of time.} 
 
 %thus significant error builds up before the multi-scale simulation starts. In particular, the increase of variance seen in the PLM, and which does not appear in the SLM, is identified late (see e.g., \ref{ex2:prey_variance}), and as a result, the time-scale of speciation is essentially delayed. This is reflected in Figures \ref{ex2:prey_x1}--\ref{ex2:prey_x2}, where we see that mean traits of the child species have not diverged as much as in the reference simulation. 
 
@@ -1058,6 +1058,11 @@ We recall that for this example, Assumption~\ref{assum:analysis} is not satisfie
   \caption{A posteriori modeling-remainder estimator, $\eta_{\textn{rem},i}^{k}$, for `predator'-species as a function of time.}
   \label{ex2:pred_residuals}
 \end{figure}
+\red{
+\begin{remark}[Computation times]
+The heuristic method will have a computation time approximately equal to that of solving only the species level model for the same time interval. On the other hand, the multi-scale method will have a computation time higher than that of solving the population level model for a time interval equal to the speciation interval (with the same grid size as the local density region) since the compression operator is implemented as an iteration procedure. Thus, the heuristic method will in general be orders of magnitude faster than the multi-scale method. For this reason, we omit listing a comparison.
+\end{remark}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:conclusions}
