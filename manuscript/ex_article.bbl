@@ -1,0 +1,145 @@
+\begin{thebibliography}{10}
+
+\bibitem{alekseev2016stability}
+{\sc G.~V. Alekseev, R.~V. Brizitskii, and Z.~Y. Saritskaya}, {\em Stability
+  estimates of solutions to extremal problems for a nonlinear
+  convection-diffusion-reaction equation}, Journal of Applied and Industrial
+  Mathematics, 10 (2016), pp.~155--167.
+
+\bibitem{becker2001optimal}
+{\sc R.~Becker and R.~Rannacher}, {\em An optimal control approach to a
+  posteriori error estimation in finite element methods}, Acta numerica, 10
+  (2001), pp.~1--102.
+
+\bibitem{cheney2013analysis}
+{\sc W.~Cheney}, {\em Analysis for applied mathematics}, vol.~208 of Graduate
+  Texts in Mathematics, Springer-Verlag, New York, 2001,
+  \url{https://doi.org/10.1007/978-1-4757-3559-8},
+  \url{https://doi.org/10.1007/978-1-4757-3559-8}.
+
+\bibitem{coyne2004speciation}
+{\sc J.~A. Coyne, H.~A. Orr, et~al.}, {\em Speciation}, vol.~37, Sinauer
+  Associates Sunderland, MA, 2004.
+
+\bibitem{debarre2014multidimensional}
+{\sc F.~D{\'e}barre, S.~Nuismer, and M.~Doebeli}, {\em Multidimensional (co)
+  evolutionary stability}, The American Naturalist, 184 (2014), pp.~158--171.
+
+\bibitem{dieckmann1997can}
+{\sc U.~Dieckmann}, {\em Can adaptive dynamics invade?}, Trends in Ecology \&
+  Evolution, 12 (1997), pp.~128--131.
+
+\bibitem{dieckmann2007adaptive}
+{\sc U.~Dieckmann, {\AA}.~Br{\"a}nnstr{\"o}m, R.~HilleRisLambers, and H.~C.
+  Ito}, {\em The adaptive dynamics of community structure}, in Mathematics for
+  ecology and environmental sciences, Springer, 2007, pp.~145--177.
+
+\bibitem{dieckmann1999origin}
+{\sc U.~Dieckmann and M.~Doebeli}, {\em On the origin of species by sympatric
+  speciation}, Nature, 400 (1999), pp.~354--357.
+
+\bibitem{dieckmann2004adaptive}
+{\sc U.~Dieckmann, M.~Doebeli, J.~A. Metz, and D.~Tautz}, {\em Adaptive
+  speciation}, Cambridge University Press, 2004.
+
+\bibitem{doebeli1996quantitative}
+{\sc M.~Doebeli}, {\em A quantitative genetic competition model for sympatric
+  speciation}, Journal of evolutionary biology, 9 (1996), pp.~893--909.
+
+\bibitem{doebeli2000evolutionary}
+{\sc M.~Doebeli and U.~Dieckmann}, {\em Evolutionary branching and sympatric
+  speciation caused by different types of ecological interactions}, The
+  american naturalist, 156 (2000), pp.~S77--S101.
+
+\bibitem{doebeli2003speciation}
+{\sc M.~Doebeli and U.~Dieckmann}, {\em Speciation along environmental
+  gradients}, Nature, 421 (2003), pp.~259--264.
+
+\bibitem{ern2017guaranteed}
+{\sc A.~Ern, I.~Smears, and M.~Vohral{\'\i}k}, {\em Guaranteed, locally
+  space-time efficient, and polynomial-degree robust a posteriori error
+  estimates for high-order discretizations of parabolic problems}, SIAM Journal
+  on Numerical Analysis, 55 (2017), pp.~2811--2834.
+
+\bibitem{ern2010posteriori}
+{\sc A.~Ern and M.~Vohral{\'\i}k}, {\em A posteriori error estimation based on
+  potential and flux reconstruction for the heat equation}, SIAM Journal on
+  Numerical Analysis, 48 (2010), pp.~198--223.
+
+\bibitem{evans1998partial}
+{\sc L.~C. Evans}, {\em Partial differential equations}, Graduate studies in
+  mathematics, 19 (1998).
+
+\bibitem{gavrilets2004fitness}
+{\sc S.~Gavrilets}, {\em Fitness landscapes and the origin of species
+  (MPB-41)}, Princeton University Press, 2004.
+
+\bibitem{geritz2000adaptive}
+{\sc S.~A. Geritz and K.~{\'E}va}, {\em Adaptive dynamics in diploid, sexual
+  populations and the evolution of reproductive isolation}, Proceedings of the
+  Royal Society of London. Series B: Biological Sciences, 267 (2000),
+  pp.~1671--1678.
+
+\bibitem{leigh1968ecological}
+{\sc E.~R. Leigh}, {\em The ecological role of volterra's equations}, Some
+  mathematical problems in biology,  (1968).
+
+\bibitem{nordbotten2020dynamics}
+{\sc J.~M. Nordbotten, F.~Bokma, J.~S. Hermansen, and N.~C. Stenseth}, {\em The
+  dynamics of trait variance in multi-species communities}, Royal Society open
+  science, 7 (2020), p.~200321.
+
+\bibitem{nordbotten2016asymmetric}
+{\sc J.~M. Nordbotten and N.~C. Stenseth}, {\em Asymmetric ecological
+  conditions favor red-queen type of continued evolution over stasis},
+  Proceedings of the National Academy of Sciences, 113 (2016), pp.~1847--1852.
+
+\bibitem{nosil2012ecological}
+{\sc P.~Nosil}, {\em Ecological speciation}, Oxford University Press, 2012.
+
+\bibitem{papevz2018estimating}
+{\sc J.~Pape{\v{z}}, Z.~Strako{\v{s}}, and M.~Vohral{\'\i}k}, {\em Estimating
+  and localizing the algebraic and total numerical errors using flux
+  reconstructions}, Numerische Mathematik, 138 (2018), pp.~681--721.
+
+\bibitem{price2008speciation}
+{\sc T.~Price et~al.}, {\em Speciation in birds}, Roberts and Co., 2008.
+
+\bibitem{rosenzweig1978competitive}
+{\sc M.~L. Rosenzweig}, {\em Competitive speciation}, Biological Journal of the
+  Linnean Society, 10 (1978), pp.~275--289.
+
+\bibitem{sasaki2011oligomorphic}
+{\sc A.~Sasaki and U.~Dieckmann}, {\em Oligomorphic dynamics for analyzing the
+  quantitative genetics of adaptive speciation}, Journal of mathematical
+  biology, 63 (2011), pp.~601--635.
+
+\bibitem{smears2020simple}
+{\sc I.~Smears and M.~Vohral{\'\i}k}, {\em Simple and robust equilibrated flux
+  a posteriori estimates for singularly perturbed reaction--diffusion
+  problems}, ESAIM: Mathematical Modelling and Numerical Analysis, 54 (2020),
+  pp.~1951--1973.
+
+\bibitem{MR2338400}
+{\sc M.~Vohral\'{\i}k}, {\em A posteriori error estimates for lowest-order
+  mixed finite element discretizations of convection-diffusion-reaction
+  equations}, SIAM J. Numer. Anal., 45 (2007), pp.~1570--1599,
+  \url{https://doi.org/10.1137/060653184},
+  \url{https://doi.org/10.1137/060653184}.
+
+\bibitem{vukics2003speciation}
+{\sc A.~Vukics, J.~Asb{\'o}th, and G.~Mesz{\'e}na}, {\em Speciation in
+  multidimensional evolutionary space}, Physical Review E, 68 (2003),
+  p.~041903.
+
+\bibitem{weinan2011principles}
+{\sc E.~Weinan}, {\em Principles of multiscale modeling}, Cambridge University
+  Press, 2011.
+
+\bibitem{woodward2000analysis}
+{\sc C.~S. Woodward and C.~N. Dawson}, {\em Analysis of expanded mixed finite
+  element methods for a nonlinear parabolic equation modeling flow into
+  variably saturated porous media}, SIAM Journal on Numerical Analysis, 37
+  (2000), pp.~701--724.
+
+\end{thebibliography}

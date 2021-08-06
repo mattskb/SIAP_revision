@@ -1,0 +1,126 @@
+% SIAM Shared Information Template
+% This is information that is shared between the main document and any
+% supplement. If no supplement is required, then this information can
+% be included directly in the main document.
+
+
+% Packages and macros go here
+\usepackage{lipsum}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{algorithmic}
+\ifpdf
+  \DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
+\else
+  \DeclareGraphicsExtensions{.eps}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{subcaption}
+
+\newcommand{\vecc}{\mathbf{c}}
+\newcommand{\id}{{\mathbb I}}
+\newcommand{\tol}{\textnormal{TOL}}
+\newcommand{\real}{{\mathbb R}}
+\newcommand{\dx}{\textnormal{d}x}
+\newcommand{\textn}[1]{\textnormal{#1}}
+\newcommand{\pt}{\partial_t}
+\newcommand{\dy}{\textnormal{d}y}
+\newcommand{\dzeta}{\textnormal{d}\zeta}
+\newcommand{\bse}{\begin{subequations}}
+\newcommand{\ese}{\end{subequations}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newcommand{\Cbb}{{\mathbb C}}
+\newcommand{\Dbb}{{\mathbb D}}
+
+\newcommand{\Ccal}{\mathcal{C}}
+\newcommand{\Bcal}{\mathcal{B}}
+\newcommand{\Zcal}{\mathcal{Z}}
+\newcommand{\Ncal}{\mathcal{N}}
+\newcommand{\Lcal}{\mathcal{L}}
+\newcommand{\Fcal}{\mathcal{F}}
+\newcommand{\Jcal}{\mathcal{J}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\Dcal}{\mathcal{D}}
+
+\newcommand{\sigmabo}{\boldsymbol{\sigma}}
+\newcommand{\Sigmabo}{\boldsymbol{\Sigma}}
+
+\newcommand{\vecV}{\mathbf{V}}
+\newcommand{\vecN}{\mathbf{N}}
+\newcommand{\vecX}{\mathbf{X}}
+
+\newcommand{\dnabla}{\nabla \nabla}
+\newcommand{\dnablaii}{\nabla_i \nabla_i}
+\newcommand{\dnablajj}{\nabla_j \nabla_j}
+\newcommand{\dnablaij}{\nabla_i \nabla_j}
+
+\newcommand{\vertiii}[1]{{\vert\kern-0.25ex\vert\kern-0.25ex\vert #1 \vert\kern-0.25ex\vert\kern-0.25ex\vert}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\bnorm}[1]{\Big\lVert#1\Big\rVert}
+
+\newcommand{\Hdiv}{\mathbf{H}(\divvv,\Omega)}
+\newcommand{\divvv}{{\textnormal{div}}}
+
+\newcommand{\etaRK}{\eta_{\textnormal{R},K}}
+\newcommand{\etaDF}{\eta_{\textnormal{DF},K}}
+\newcommand{\etaphih}{\eta_{\Phi}}
+\newcommand{\etagh}{\eta_{g,K}}
+\newcommand{\etarh}{\eta_{r,K}}
+\newcommand{\etaosch}{\eta_{f}}
+\newcommand{\etaphihj}{\eta_{\Phi,i}}
+
+\newcommand{\etaRKj}{\eta_{\textnormal{R},K,i}}
+\newcommand{\etaDFj}{\eta_{\textnormal{DF},K,i}}
+\newcommand{\etaghj}{\eta_{g,K,i}}
+\newcommand{\etarhj}{\eta_{r,K,i}}
+
+\newcommand{\dist}{\textnormal{dist}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Add a serial/Oxford comma by default.
+\newcommand{\creflastconjunction}{, and~}
+
+% Used for creating new theorem and remark environments
+\newsiamremark{remark}{Remark}
+\newsiamremark{hypothesis}{Hypothesis}
+\crefname{hypothesis}{Hypothesis}{Hypotheses}
+\newsiamthm{claim}{Claim}
+
+%%
+\newsiamthm{assum}{Assumption}
+\newsiamthm{df}{Definition}
+%%
+
+% Sets running headers as well as PDF title and authors
+\headers{Modeling the process of speciation using a multi-scale framework including a posteriori error estimates}{M. K. Brun, E. Ahmed, J. M. Nordbotten, and N. C. Stenseth}
+
+% Title. If the supplement option is on, then "Supplementary Material"
+% is automatically inserted before the title.
+\title{Modeling the process of speciation using a multi-scale framework including a posteriori error estimates\thanks{Submitted to the editors DATE.
+\funding{This work was funded 
+in part by Norwegian Research Council project no.~263149.}}}
+
+% Authors: full names plus addresses.
+\author{Mats K. Brun\thanks{CEES, Dept. of Biosciences, University of Oslo,  
+NO-0316 Oslo, Norway 
+  (\email{m.k.brun@ibv.uio.no}, \email{n.c.stenseth@mn.uio.no}).}
+\and Elyes Ahmed\thanks{SINTEF, NO-0314 Oslo, Norway} 
+  (\email{elyes.ahmed@sintef.no}).
+\and Jan M. Nordbotten\thanks{Department of Mathematics, University of Bergen,
+NO-5020 Bergen, Norway 
+  (\email{jan.nordbotten@uib.no}).}
+\and Nils Chr. Stenseth\footnotemark[2]}
+
+\usepackage{amsopn}
+\DeclareMathOperator{\diag}{diag}
+
+
+%%% Local Variables: 
+%%% mode:latex
+%%% TeX-master: "ex_article"
+%%% End: 
