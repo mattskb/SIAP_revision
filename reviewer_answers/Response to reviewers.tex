@@ -1,0 +1,226 @@
+\documentclass[a4paper,11pt]{scrartcl}
+%\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{array, hhline}
+\usepackage{tikz}
+\usepackage{authblk}
+
+
+\usepackage[]{times}
+\usepackage{fullpage}
+%\addtolength{\textheight}{1cm}
+\usepackage{graphicx}
+%\usepackage{subfigure}
+
+\date{}%leave empty
+
+%added by Florin
+
+\usepackage{color}
+\newcommand{\red}{\textcolor{red}}
+
+%\renewcommand{\topmargin}{-36pt}
+%\renewcommand{\headheight}{36pt}
+
+
+%\newcommand{\beginproof}{{\bf Proof}}
+%\newcommand{\finishedproof}{\hfill {\bf Q. E. D.}}
+%
+%\newcommand{\gr}[1]{\ensuremath{\nabla_{\bf #1}}} %gradient wrt a vector
+%\newcommand{\ve}[1]{\ensuremath{\bf{ #1}}}				%bold vectors in math mode
+%\newcommand{\bg}[1]{\ensuremath{\boldsymbol{#1}}} %bold greek symbols
+%
+%\newcommand{\ds}{\displaystyle}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\N}{\mathbb{N}}
+%
+%
+%
+%\def\l2{L^2(\Omega)}
+%\def\ha1{H^1(\Omega)}
+%\def\h10{H^1_0(\Omega)}
+%\def\hdiv{H(\mathrm{div}; \Omega)}
+
+%\def\R{{\rm I\kern-.17em R}}
+%\define\ker
+%sonstige
+%\def\o{\Omega}
+%\def\into{\int_\Omega}
+%\def\normala{\overline{n}}
+%\def\oq{\overline{{\bf q}}}
+%\def\oc{\overline{c}}
+%\def\ocQ{\overline{c {\bf Q} }}
+%\def\oQ{\overline{ {\bf Q} }}
+%\def\bun{\overline{{\bf u}}^n}
+%\def\osn{\overline{{s}}^n}
+%\def\opn{\overline{{p}}^n}
+%\def\othetan{\overline{\Theta}^n}
+%\def\oqn{\overline{{\bf q}}^n}
+%\def\oqk{\overline{{\bf q}}^k}
+%
+%\def\bq{{\bf q}}
+%\def\bv{{\bf v}}
+%\def\bQ{{\bf Q}}
+%\def\be{{\bf e}}
+%\def\bx{{\bf x}}
+%\def\bu{{\bf u}}
+%\def\bff{{\bf f}}
+%\def\ov{\overline{{\bf v}}}
+%\newcommand{\ds}{\displaystyle}
+%\newcommand{\dfrac}[2]{\frac{ \ds #1}{\ds #2}}
+%\newcommand{\ra}{\rangle}
+%\newcommand{\la}{\langle}
+%\newtheorem{problem}{\sc \bf Problem}[section]
+%\newtheorem{proposition}{\sc \bf Proposition}[section]
+%\newtheorem{remark}{\bf Remark}[section]
+%\newtheorem{theorem}{\bf Theorem}[section]
+%\newtheorem{lemma}{\bf Lemma}[section]
+
+\newcommand{\Wcal}{\mathcal{W}}
+\newcommand{\Ucal}{\mathcal{U}}
+\newcommand{\Pcal}{\mathcal{P}}
+\newcommand{\Tcal}{\mathcal{T}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\Acal}{\mathcal{A}}
+\newcommand{\Scal}{\mathcal{S}}
+\newcommand{\Bcal}{\mathcal{B}}
+\newcommand{\Ccal}{\mathcal{C}}
+\newcommand{\Xcal}{\mathcal{X}}
+\newcommand{\Jcal}{\mathcal{J}}
+\newcommand{\Mcal}{\mathcal{M}}
+\newcommand{\Hcal}{\mathcal{H}}
+
+\let\phi\varphi
+\begin{document}
+
+\textbf{Dear editorial office,}\\
+
+Please, find attached the revised version of our manuscript \#M140522: "Modeling the process of speciation using a multi-scale framework including a posteriori error estimates". In this revision we have addressed all issues raised by the referees, to whom we are truly thankful for the thorough reading and for the suggestions that helped us in improving the paper. The changes made to the manuscript are colored red for easier comparison with the original version. You can find below detailed answers at reviewers comments and the modifications made to the manuscript.
+
+Many thanks,\\
+\hspace*{2cm}Mats K. Brun, Elyes Ahmed, Jan M. Nordbotten and Nils Chr. Stenseth.\\[2ex]
+
+\textbf{ Referee \#1  (Remarks to the Author)}\\
+
+\textit{The paper deals with the process of speciation, which is an inportant process within evolutionary biology. The emphasis of the paper is on the posterior error estimation in a multi-scale framework. The paper is well-written and well-organised. The mathematical theories that have been developed are sound. I do not necessarily agree with the modelling framework, but this is not what the current manuscript is about, hence this remark of mine is irrelevant. I recommend minor revisions, and to aid the Authors present their work more clearly, I have the following points that are to be addressed:}
+
+\begin{enumerate}
+\item
+\textit{In general, the abstract may put more emphasis on what the paper is actually about: namely the posterior error analysis. This has only been written in the very last sentences of the abstract. Probably, this is a matter of taste ...}
+
+Author answer:
+
+\item
+\textit{The diffusion (second spatial derivative) term in the left-hand side of equation (2.2) represents the evolutionary process. I would call g the diffusion tensor instead of the diffusion coefficient (line 180).}
+
+Author answer:
+
+\item
+\textit{Since g is the diffusion tensor. It is assumed to be symmetric (Assumption 3.1). Of course, this symmetry facilitates the mathematical treatment with respect to well-posedness and error estimation. It is said that in the manuscript that Assumptions 3.1 follow from biology. Could there be any biological application cases where g is nonsymmetric?}
+
+Author answer:
+
+\item
+\textit{Regarding the boundary condition that n vanishes on the boundary of the trait space (assumung that the trait space is 'large enough'), one could also relax this BC by considering g grad n + A n = 0. Although this BC would relax that n = 0, one has to fiddle around with the A-parameter. Do you think that this alternative BC could do a better job?}
+
+Author answer:
+
+\item
+\textit{Regarding the modelling part. The g-tensor for diffusion is based on 'ordinary' diffusion in which random changes are gradual. In many biological systems, mutations could give large, sudden changes over time, which could be modelled using Levy-jump processes. Then one has to incorporate fractional derivatives. Perhaps the Authors could comment on this. (I am not asking the Authors to carry out the analysis for this case, that would really be too much, the question is just meant to be philosophical).}
+
+Author answer:
+
+\item
+\textit{The multi-species model models the transition between species, and in a short subsection (2.3), the relation between the multi-species model and the polultion level model is presented. What I miss om the multi-species model is the actual evolutionary part of the process. There is no random part in this model, which does exist in the population level model through the volatility (diffusion) part. Should not the Authors include a Wiener process (or Levy process to account for jump processes) here (to allow random walk)? Now the approach seems entirely deterministic.}
+
+Author answer:
+
+\item
+\textit{Section 3.3.4, regarding uniqueness. I think that the Authors should add that relation (3.7c) (monotone) makes $||R^k||$ convex, which then proves uniqueness. Formally, the Authors only say that $\phi = n^k$ makes $||R^k||$ zero (which is the minimum), but this formally does not yet exclude any other possible minima.}
+
+Author answer:
+
+\item
+\textit{Line 528 please, replace 'The figure 2 below' with 'Figure 2 below'}
+
+Author answer:
+
+\item
+\textit{Your analysis is also built on the existence of statistical moments, hence in the case of a Cauchy distribution (which has a very 'normal' appearance), the model may lead to problems. It could be interesting to do a numerical experiment with a Cauchy distribution function. ($f(x) = 1/pi 1 / (x^2 + 1)$ is the standard Cauchy distribution, which has no moments (average, standard deviation ...).}
+
+Author answer:
+
+\item
+\textit{Proof of Proposition 6.1: I would replace 'By construction, we have' with 'By construction, from relations (6.2) and (6.3), we have'}
+
+Author answer:
+
+\item
+\textit{line 617: please, replace 'leads' with 'lead'}
+
+Author answer:
+
+\item
+\textit{line 664: The Authors note that, indeed, the Gaussian does not satisfy the boundary conditions. Indeed, if the boundaries are far enough, then, the boundary conditions are approximately satisfied. Hence, then there is no problem. The Authors could use the classical bound for a normal distribution (which is much sharper than Chebychev's Inequality) that}
+
+$$P(|X| \ge t ) \le \sqrt{\frac{2}{\pi}} \frac{\sigma}{t} exp(-\frac{t^2}{2 \sigma^2}),$$
+
+\textit{where $X \sim \mathcal{N}(0,\sigma^2)$. Of course, this relation is based on independence. Using the eigenvalues of the covariance (which is symmetric and hence the eigenvectors are orthogonal), the expression could nevertheless provide some estimation of the upper bound of the initial condition on the boundary.
+Of course, this is not necessary to quantify directly for this manuscript, but the Authors could incorporate this in their future studies on this matter.}
+
+Author answer:
+
+\item
+\textit{The errors in the figures, as well as the tolerances used in the paper (for instance $TOL_{res}$) seem to be large to me. Perhaps, they are not large relatively. The Authors should put this into its context, I think.}
+
+Author answer:
+
+\item
+\textit{Line 768: Please specify which figures you are describing in terms of their labels rather than talking about 'The figures below'.}
+
+Author answer:
+
+\item
+\textit{Please, say something about a comparison of computing times of the heuristic method and the multiscale method in Sectino 7.3.2.}
+
+Author answer:
+
+\item
+\textit{Figures 11 and 12 seem blurry (or is it my eyes after having read the manuscript).}
+
+Author answer:
+
+\textit{These were my comments. I appreciate the paper, I enjoyed reading.}
+
+Author answer: Thank you for the positive evaluation of our manuscrupt!
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Referee \#2  (Remarks to the Author):}\\
+
+This manuscript is concerned with a mathematical modelling for speciation using a general Lotka-Volterra equation modelling the evolution of some ecosystem. This model takes into account species traits and mutations through a diffusion term. This general equation is coupled with a system of ODE modelling the species level: density of species together with the evolution of the mean traits and the covariance matrix.
+
+\begin{enumerate}
+\item
+\textit{The authors discuss and propose a model for the speciation processes leading to new species. To do so, they make use of a discretized version of the above equations. The discussions on the speciation processes seems to be highly related to the choice of the discrete system and in particular on the reconstruction operator. No connection with the original continuous system is clearly explained neither how it depends on the discretization.
+Speciation is modeled in term of clustering in the trait space. Does it depend on the traits kept in the model?}
+
+Author answer:
+
+\item
+\textit{From a modelling view point, how do you choose the selection function $\alpha=\alpha(x,y,t)$? How is it related to the coefficients $A_{i,j}$ in (2.5a)? How the multi-scale parameters are coupled?}
+
+Author answer:
+\end{enumerate}
+
+\textbf{References:}\\
+
+$[$1$]$ Q. Hong, J. Kraus, "Parameter-robust stability of classical three-field formulation of Biot's consolidation model", Electronic Transactions on Numerical Analysis, 2018, 48, 202-226. \\
+
+$[$2$]$ Castelletto, N., J. A. White, and H. A. Tchelepi. "Accuracy and convergence properties of the fixed-stress iterative solution of two-way coupled poromechanics", International Journal for Numerical and Analytical Methods in Geomechanics 39.14 (2015): 1593-1618. \\
+
+$[$3$]$ Lee, Jeonghun J., Kent-Andre Mardal, and Ragnar Winther. "Parameter-robust discretization and preconditioning of Biot's consolidation model", SIAM Journal on Scientific Computing 39.1 (2017): A1-A24. \\
+
+$[$4$]$ Hong, Q., Kraus, J., Lymbery, M., and Philo, F. (2019). "Conservative discretizations and parameter-robust preconditioners for Biot and multiple-network flux-based poroelasticity models", Numerical Linear Algebra with Applications, 26(4), e2242.
+
+\end{document} 
