@@ -95,10 +95,9 @@
 
 \textbf{Dear editorial office,}\\
 
-Please, find attached the revised version of our manuscript \#M140522: "Modeling the process of speciation using a multi-scale framework including a posteriori error estimates". In this revision we have addressed all issues raised by the referees, to whom we are truly thankful for the thorough reading and for the suggestions that helped us in improving the paper. The changes made to the manuscript are colored red for easier comparison with the original version. You can find below detailed answers at reviewers comments and the modifications made to the manuscript.
+Please, find attached the revised version of our manuscript \#M140522: "Modeling the process of speciation using a multi-scale framework including a posteriori error estimates". In this revision we have addressed all issues raised by the referees, to whom we are truly thankful for the thorough reading and for the suggestions that helped us in improving the paper. The changes made to the manuscript are colored red for easier comparison with the original version. You can find below detailed answers at reviewers comments and the modifications made to the manuscript. Many thanks,\\
 
-Many thanks,\\
-\hspace*{2cm}Mats K. Brun, Elyes Ahmed, Jan M. Nordbotten and Nils Chr. Stenseth.\\[2ex]
+Mats K. Brun, Elyes Ahmed, Jan M. Nordbotten and Nils Chr. Stenseth.\\[2ex]
 
 \textbf{ Referee \#1  (Remarks to the Author)}\\
 
@@ -146,7 +145,7 @@ Line 528 please, replace 'The figure 2 below' with 'Figure 2 below'
 AUTHOR answer: This has been corrected.
 
 \item
-Your analysis is also built on the existence of statistical moments, hence in the case of a Cauchy distribution (which has a very 'normal' appearance), the model may lead to problems. It could be interesting to do a numerical experiment with a Cauchy distribution function. ($f(x) = 1/\pi 1 / (x^2 + 1)$ is the standard Cauchy distribution, which has no moments (average, standard deviation ...).
+Your analysis is also built on the existence of statistical moments, hence in the case of a Cauchy distribution (which has a very 'normal' appearance), the model may lead to problems. It could be interesting to do a numerical experiment with a Cauchy distribution function. ($f(x) = 1/\pi \cdot 1 / (x^2 + 1)$ is the standard Cauchy distribution, which has no moments (average, standard deviation ...).
 
 AUTHOR answer: The derivation of the species level model from the population level model rests on two fundamental assumptions; (1) that distinct species can be identified at all times over the global population distribution (i.e., as compactly supported, non-overlapping sub-distributions), and (2) that these sub-distributions are of a known statistical quality (in this case, the Gaussian/normal distribution). As discussed in [1] (where the species level model is derived), the choice of the Gaussian was to a certain degree due to convenience (although individual traits are commonly assumed to follow a normal distribution in the biological literature), hence other statistical distributions could also be accomodated (at the cost of an increasingly complex calculation/notation, see e.g., page 5-6 in [1] where the possibility of using the uniform distribution is briefly discussed). However, for the exact reasons given in your comment, the Cauchy distribution is not a possible choice, although Cauchy distributions do not pose a problem in terms of the population level model. \\
 
@@ -185,7 +184,7 @@ AUTHOR answer: We chose not to normalize the errors and estimators used in the n
 \item
 Line 768: Please specify which figures you are describing in terms of their labels rather than talking about 'The figures below'.
 
-AUTHOR answer: Although the labels were also present, we have rewritten this paragraph to make it more clear which figures are referred to. Similarly with the first paragraph of section (7.2.2).
+AUTHOR answer: This paragraph has been rewritten to make it more clear which figures are referred to. Similarly with the first paragraph of section (7.2.2).
 
 \item
 Please, say something about a comparison of computing times of the heuristic method and the multiscale method in Sectino 7.3.2.
@@ -217,7 +216,7 @@ AUTHOR answer:
 \item
 From a modelling view point, how do you choose the selection function $\alpha=\alpha(x,y,t)$? How is it related to the coefficients $A_{i,j}$ in (2.5a)? How the multi-scale parameters are coupled?
 
-AUTHOR answer: $A_{i,j}$ is related to $\alpha$ through eq. (2.6c), i.e., the effect of species $i$ on species $j$ (as opposed to individuals with different trait coordinates effect each other, as is the case at the population level). From a modeling point of view, $\alpha$ defines the ecological interactions in the system, and measures potentially competitive, mutualistic, and trophic interactions, and may in general be either symmetric or unsymmetric. Hence, it may take many different functional forms. For the numerical examples in the paper (which are only meant to illustrate the multi-scale framework, not represent any real eco-evolutionary system) we chose in the first case a symmetric competitive ecology, and in the second case an unsymmetric trophic ecology. More details on $\alpha$ can be found in [2].
+AUTHOR answer: $A_{i,j}$ is related to $\alpha$ through eq. (2.6c), i.e., the effect of species $i$ on species $j$ (as opposed to how individuals with different trait coordinates effect each other, as is the case at the population level). From a modeling point of view, $\alpha$ defines the ecological interactions in the system, and measures potentially competitive, mutualistic, and trophic interactions, and may in general be either symmetric or unsymmetric. Hence, it may take many different functional forms. For the numerical examples in the paper (which are only meant to illustrate the multi-scale framework, not represent any real eco-evolutionary system) we chose in the first case a symmetric competitive ecology, and in the second case an unsymmetric trophic ecology. More details on $\alpha$ can be found in [2]. However it is outside the scope of the paper to address in detail how $\alpha$ should be chosen in order to model different ecologies.
 
 The strategy for coupling the species and population scales in the multi-scale framework is outlined in section 5 "Speciation", the the main components being the mappings from the species scale to the population scale (reconstruction operator) and vice-versa (compression operator).
 \end{enumerate}
