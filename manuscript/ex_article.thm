@@ -1,17 +1,18 @@
-\contentsline {assum}{{Assumption}{3.1}{Coefficients and source term}}{7}{theorem.38}% 
-\contentsline {assum}{{Assumption}{3.2}{Nonlinear terms}}{8}{theorem.53}% 
-\contentsline {remark}{{Remark}{3.3}{Assumptions}}{8}{theorem.64}% 
-\contentsline {theorem}{{Theorem}{3.4}{Well posedness}}{9}{theorem.66}% 
-\contentsline {proof}{{Proof}{1}{}}{9}{proof.68}% 
-\contentsline {lemma}{{Lemma}{3.5}{Residual-error identity}}{10}{theorem.86}% 
-\contentsline {proof}{{Proof}{2}{}}{10}{proof.88}% 
-\contentsline {remark}{{Remark}{3.6}{Semi-metric}}{11}{theorem.92}% 
-\contentsline {df}{{Definition}{4.1}{Density reconstruction}}{12}{theorem.99}% 
-\contentsline {df}{{Definition}{4.2}{Equilibrated flux and density reconstructions}}{12}{theorem.100}% 
-\contentsline {theorem}{{Theorem}{4.3}{Energy-error bound}}{12}{theorem.112}% 
-\contentsline {proof}{{Proof}{3}{}}{12}{proof.114}% 
-\contentsline {proposition}{{Proposition}{6.1}{}}{17}{theorem.151}% 
-\contentsline {proof}{{Proof}{4}{}}{17}{proof.153}% 
-\contentsline {remark}{{Remark}{6.2}{Equilibrated flux}}{17}{theorem.158}% 
-\contentsline {theorem}{{Theorem}{6.3}{Error components}}{17}{theorem.160}% 
-\contentsline {proof}{{Proof}{5}{}}{18}{proof.168}% 
+\contentsline {assum}{{Assumption}{3.1}{Coefficients and source term}}{7}{theorem.38}%
+\contentsline {assum}{{Assumption}{3.2}{Nonlinear terms}}{8}{theorem.53}%
+\contentsline {remark}{{Remark}{3.3}{Assumptions}}{9}{theorem.64}%
+\contentsline {theorem}{{Theorem}{3.4}{Well posedness}}{9}{theorem.66}%
+\contentsline {proof}{{Proof}{1}{}}{9}{proof.68}%
+\contentsline {lemma}{{Lemma}{3.5}{Residual-error identity}}{11}{theorem.86}%
+\contentsline {proof}{{Proof}{2}{}}{11}{proof.88}%
+\contentsline {remark}{{Remark}{3.6}{Semi-metric}}{11}{theorem.92}%
+\contentsline {df}{{Definition}{4.1}{Density reconstruction}}{12}{theorem.99}%
+\contentsline {df}{{Definition}{4.2}{Equilibrated flux and density reconstructions}}{12}{theorem.100}%
+\contentsline {theorem}{{Theorem}{4.3}{Energy-error bound}}{12}{theorem.112}%
+\contentsline {proof}{{Proof}{3}{}}{13}{proof.114}%
+\contentsline {proposition}{{Proposition}{6.1}{}}{17}{theorem.151}%
+\contentsline {proof}{{Proof}{4}{}}{17}{proof.153}%
+\contentsline {remark}{{Remark}{6.2}{Equilibrated flux}}{17}{theorem.158}%
+\contentsline {theorem}{{Theorem}{6.3}{Error components}}{17}{theorem.160}%
+\contentsline {proof}{{Proof}{5}{}}{18}{proof.168}%
+\contentsline {remark}{{Remark}{7.1}{Computation times}}{24}{theorem.211}%
