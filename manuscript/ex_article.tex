@@ -193,11 +193,15 @@ N_{0} = (\mu_{B_{1}}^0,\mu_{B_{1}}^1,\mu_{B_{1}}^2,\cdots,\mu_{B_{s}}^0,\mu_{B_{
 Solving \eqref{ODEmodel}--\eqref{ODEmodelIC} then amounts to approximating \eqref{m0}--\eqref{m2} for $t \in J$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Time discrete PLM}\label{sec:timedisc}
-In this section we introduce the time discrete PLM, which will serve as the basis for the a posteriori error bounds. First, we establish the existence of a solution for every discrete time, then we derive an identity for the residual which also provides uniqueness of the time-discrete solution.
+In this section we introduce the time discrete PLM, which will serve as the basis for the a posteriori error bounds: 
+\red{
+For $k = 0,\cdots,M$, we let $t_k$ denote the discrete times, such that $0 = t_0 < t_1 < \cdots < t_M := T$, and where $t_k = t_{k-1} + \tau_k = \sum_{j = 1}^k \tau_k$, for some set of time increments $\{\tau_k\}_{k=1}^M$ (in the following, we use superscripts to indicate dependency on the discrete times, e.g., $u^k := u(t_k)$). The time-discrete version of eq.~\ref{PDE} then reads as (for $k\geq 1$)
+\begin{equation}
+n^k - r^k n^k + \Phi^k(n^k)n^k - \nabla \cdot (g^k \nabla n^k) = f + n^{k-1},\label{timediscPDE}
+\end{equation}
+where we have discretized in time using a standard implicit first order method (i.e., the backward Euler method). While we do not prove convergence of the above discrete scheme to the original continuous problem, the truncation error for the backward Euler method is known to be of first order. In the following, we first establish the existence of a solution to \eqref{timediscPDE} in the weak sense for every discrete time, then we derive an identity for the residual which also provides uniqueness of the time-discrete solution.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Notation}
-For $k = 0,\cdots,M$, we let $t_k$ denote the discrete times, such that $0 = t_0 < t_1 < \cdots < t_M := T$, and where $t_k = t_{k-1} + \tau_k = \sum_{j = 1}^k \tau_k$, for some set of time increments $\{\tau_k\}_{k=1}^M$. In the following, we use superscripts to indicate dependency on the discrete times, e.g., $u^k := u(t_k)$.
-
 We employ standard notation for function spaces. For a function space $V$ we denote by $\norm{\cdot}_V$ its energy norm, by $V^\ast$ its dual space, and by $\langle \cdot, \cdot \rangle_{V^\ast,V}$ the dual pairing. In particular, for $1 \leq p \leq \infty$, and a domain $D \subset \Omega$ we denote by $L^p(D)$ the Lebesgue-spaces of integrable functions defined on $D$, with associated norm $\norm{\cdot}_{p,D}$ (domain subscript omitted if this is clear from the context). Furthermore, let $L^p_{+}(D) := \{u\in L^p(D) : u \geq 0 \textn{ a.e.}\}$. For the case $p=2$, we let $\norm{u} := \norm{u}_{2} = (u,u)^{\frac{1}{2}}$, where $(\cdot,\cdot)$ is the standard $L^2$ inner product. Moreover, we denote by $\Hdiv$ the space of functions in $[L^2(D)]^d$ admitting a weak divergence, and by $H^1(D)$ the space of functions in $L^2(D)$ admitting weak gradients, with its vanishing trace subspace denoted by $H_0^1(D)$, where $H^{-1}(D) := H_0^1(D)^\ast$. Finally, denote by $H_{0,+}^1(D) := H_0^1(D) \cap L^2_{+}(D)$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -419,7 +423,7 @@ Due to the nonlinear nature of the model equation \eqref{weak_form}, the norm of
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Uniqueness}\label{WPuniqueness}
 It remains to show the uniqueness of $n^k$. To this end, we suppose that
-$\psi$ satisfies~\eqref{weak_form}, which implies that $\vertiii{\mathcal{R}^k(\psi)}_{k^\ast}=0$. \red{Then, thanks to the identity~\eqref{res_error}, and since $\vertiii{\Rcal^k(\psi)}^2_{k^\ast}$ is convex due to the monotonicity condition~\eqref{monotonicity}, we obtain that $\psi=n^{k}$ in $X_k$.} This section concludes the proof of Theorem~\ref{thm:wellposed}.
+$\psi$ satisfies~\eqref{weak_form}, which implies that $\vertiii{\mathcal{R}^k(\psi)}_{k^\ast}=0$. \red{Then, since the first term on the right hand side of~\eqref{res_error} is a norm and since the second term is convex due to the monotonicity condition~\eqref{monotonicity}, we obtain that $\psi=n^{k}$ in $X_k$.} This section concludes the proof of Theorem~\ref{thm:wellposed}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A posteriori error bound}\label{sec:eestimates}
 In this section we adopt energy-type a posteriori error bounds based on the dual norm of the residual for the weak time-discrete PLM, i.e., the problem \eqref{weak_form} using similar techniques as in~\cite{ern2017guaranteed,ern2010posteriori,papevz2018estimating,smears2020simple}. We then provide a guaranteed and fully computable upper bound on the energy--type error in terms of various error estimators, using suitable flux and density reconstructions.
@@ -708,7 +712,7 @@ In this section we present two numerical examples where we employ both the heuri
 For both examples we assess the accuracy of the speciation methods by solving simultaneously the PLM globally and calculating the moments which are then compared to the corresponding species parameters. Moments of the reference PLM solution are always shown as dotted lines, and indicated by the letter $\mu$ in the legends. For the multi-scale method, the start and end of the speciation event is indicated by two vertical dotted lines. For the heuristic method, speciation is indicated by a single vertical dotted line. 
 %Furthermore, for the second numerical example the monotonicity condition \eqref{monotonicity} is not fulfilled, and hence the assertion of Lemma~\ref{lem:edist} is not true. Nonetheless, from a modeling point of view the multi-scale framework developed is still applicable.
 
-We assume the discretization errors associated with solving the models are negligible compared to the modeling error which we are interested in, hence in practice we calculate only the remainder estimator $\eta_{\textn{rem},i}^k$ from \eqref{etarem} when estimating~\eqref{finalestimate} \red{(note that we do not normalize in the plots)}. Moreover, the density reconstruction operator $\Dcal$ is implemented as a normal distribution, i.e., for a species $N_i^k = (n_i^k,x_i^k,\upsilon_i^k)$ we have
+We assume the discretization errors associated with solving the models are negligible compared to the modeling error which we are interested in, hence in practice we calculate only the remainder estimator $\eta_{\textn{rem},i}^k$ from \eqref{etarem} when estimating~\eqref{finalestimate}. Moreover, the density reconstruction operator $\Dcal$ is implemented as a normal distribution, i.e., for a species $N_i^k = (n_i^k,x_i^k,\upsilon_i^k)$ we have
 \begin{equation}
 (\Dcal N_i^k)(x) :=  \frac{1}{\Lambda(\upsilon_i^k)}\exp\left(-\frac{1}{2}(x-x_i^k)^\top(\upsilon_i^k)^{-1}(x-x_i^k)\right).
 \end{equation}
@@ -763,7 +767,7 @@ g(x,t) &= 5e-6 \times \id.
 \ese
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Simulation}
-With the parameters given in the previous section, we employ both the heuristic and multi-scale speciation algorithms. \red{Figure~\ref{ex1:abundance} below shows the species abundance, figure~\ref{ex1:x1} the species mean trait coordinates, figure~\ref{ex1:variance} the largest eigenvalue of the trait covariance matrix, figure~\ref{ex1:residuals} the a posteriori error bound, and figure~\ref{ex1:edist} the error in energy norm, as functions of time.} 
+With the parameters given in the previous section, we employ both the heuristic and multi-scale speciation algorithms. \red{Figure~\ref{ex1:abundance} below shows the species abundance, figure~\ref{ex1:x1} the species mean trait coordinates, figure~\ref{ex1:variance} the largest eigenvalue of the trait covariance matrix, figure~\ref{ex1:residuals} the a posteriori error bound, and figure~\ref{ex1:edist} the error in energy norm, as functions of time. Note that due to the presence of $G^{-\frac{1}{2}}$ in the definition of $\eta_{rem,i}^k$ (eq. \eqref{etarem}), the magnitudes in figure~\ref{ex1:residuals} can not be directly compared to those of the preceding figures.}
 
 We observe from the results a very close match between the reference solution and the multi-scale method throughout the simulation time. Indeed, the error in the energy norm, as seen in Figure~\ref{ex1:edist} is lower during the multi-scale window than during the pure SLM simulation, indicating that the modeling error of the SLM in terms of capturing species dynamics dominates over the error associated with the speciation event. In terms of species-level parameters, as shown in the remaining figures, the qualitative match is also quite satisfactory for the multi-scale mathod outside the speciation event (these quantities are of course not defined during the speciation event itself). 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.6)  10 AUG 2021 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.6)  13 AUG 2021 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -593,7 +593,7 @@ ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
 
 [5] [6]
 Package hyperref Info: bookmark level for unknown assum defaults to 0 on input 
-line 206.
+line 210.
 
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
@@ -602,21 +602,21 @@ ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
 
 [7] [8]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 294.
+ line 298.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 301.
+t line 305.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 313.
+line 317.
 
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
-[9]
+[9] [10]
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 390.
- [10]
+line 394.
+
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
@@ -624,29 +624,25 @@ ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
 
 [11]
 Package hyperref Info: bookmark level for unknown df defaults to 0 on input lin
-e 443.
+e 447.
  [12]
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
-[13]
-<figures/region.png, id=479, 1030.85126pt x 581.17125pt>
+[13] [14]
+<figures/region.png, id=490, 1030.85126pt x 581.17125pt>
 File: figures/region.png Graphic file (type png)
 <use figures/region.png>
-Package pdftex.def Info: figures/region.png  used on input line 560.
+Package pdftex.def Info: figures/region.png  used on input line 564.
 (pdftex.def)             Requested size: 166.67154pt x 93.96477pt.
-<figures/subregions.png, id=481, 1030.85126pt x 579.16376pt>
+<figures/subregions.png, id=492, 1030.85126pt x 579.16376pt>
 File: figures/subregions.png Graphic file (type png)
 <use figures/subregions.png>
-Package pdftex.def Info: figures/subregions.png  used on input line 566.
+Package pdftex.def Info: figures/subregions.png  used on input line 570.
 (pdftex.def)             Requested size: 166.67154pt x 93.6402pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14]
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
@@ -655,11 +651,11 @@ ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
 [15 <./figures/region.png> <./figures/subregions.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 618.
+(hyperref)                removing `\\' on input line 622.
 
 [16]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 646.
+input line 650.
 
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
@@ -673,167 +669,178 @@ ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
 [19]
-<figures/ex1_new/abundance.png, id=612, 2890.8pt x 1529.715pt>
+<figures/ex1_new/abundance.png, id=608, 2890.8pt x 1529.715pt>
 File: figures/ex1_new/abundance.png Graphic file (type png)
 <use figures/ex1_new/abundance.png>
-Package pdftex.def Info: figures/ex1_new/abundance.png  used on input line 776.
+Package pdftex.def Info: figures/ex1_new/abundance.png  used on input line 780.
 
 (pdftex.def)             Requested size: 166.67154pt x 88.18434pt.
-<figures/ex1_new/abundance_H.png, id=613, 2890.8pt x 1531.7225pt>
+<figures/ex1_new/abundance_H.png, id=609, 2890.8pt x 1531.7225pt>
 File: figures/ex1_new/abundance_H.png Graphic file (type png)
 <use figures/ex1_new/abundance_H.png>
 Package pdftex.def Info: figures/ex1_new/abundance_H.png  used on input line 78
-2.
+6.
 (pdftex.def)             Requested size: 166.67154pt x 88.30006pt.
-<figures/ex1_new/x1.png, id=614, 2890.8pt x 1529.715pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/ex1_new/x1.png, id=610, 2890.8pt x 1529.715pt>
 File: figures/ex1_new/x1.png Graphic file (type png)
 <use figures/ex1_new/x1.png>
-Package pdftex.def Info: figures/ex1_new/x1.png  used on input line 793.
+Package pdftex.def Info: figures/ex1_new/x1.png  used on input line 797.
 (pdftex.def)             Requested size: 166.67154pt x 88.18434pt.
-<figures/ex1_new/x1_H.png, id=615, 2890.8pt x 1531.7225pt>
+<figures/ex1_new/x1_H.png, id=611, 2890.8pt x 1531.7225pt>
 File: figures/ex1_new/x1_H.png Graphic file (type png)
 <use figures/ex1_new/x1_H.png>
-Package pdftex.def Info: figures/ex1_new/x1_H.png  used on input line 799.
+Package pdftex.def Info: figures/ex1_new/x1_H.png  used on input line 803.
 (pdftex.def)             Requested size: 166.67154pt x 88.30006pt.
-<figures/ex1_new/lambda_max.png, id=616, 2890.8pt x 1529.715pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/ex1_new/lambda_max.png, id=612, 2890.8pt x 1529.715pt>
 File: figures/ex1_new/lambda_max.png Graphic file (type png)
 <use figures/ex1_new/lambda_max.png>
-Package pdftex.def Info: figures/ex1_new/lambda_max.png  used on input line 810
+Package pdftex.def Info: figures/ex1_new/lambda_max.png  used on input line 814
 .
 (pdftex.def)             Requested size: 166.67154pt x 88.18434pt.
-<figures/ex1_new/lambda_max_H.png, id=617, 2890.8pt x 1531.7225pt>
+<figures/ex1_new/lambda_max_H.png, id=613, 2890.8pt x 1531.7225pt>
 File: figures/ex1_new/lambda_max_H.png Graphic file (type png)
 <use figures/ex1_new/lambda_max_H.png>
 Package pdftex.def Info: figures/ex1_new/lambda_max_H.png  used on input line 8
-16.
+20.
 (pdftex.def)             Requested size: 166.67154pt x 88.30006pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/ex1_new/res.png, id=618, 2890.8pt x 1529.715pt>
+<figures/ex1_new/res.png, id=614, 2890.8pt x 1529.715pt>
 File: figures/ex1_new/res.png Graphic file (type png)
 <use figures/ex1_new/res.png>
-Package pdftex.def Info: figures/ex1_new/res.png  used on input line 827.
+Package pdftex.def Info: figures/ex1_new/res.png  used on input line 831.
 (pdftex.def)             Requested size: 166.67154pt x 88.18434pt.
-<figures/ex1_new/res_H.png, id=619, 2890.8pt x 1531.7225pt>
+<figures/ex1_new/res_H.png, id=615, 2890.8pt x 1531.7225pt>
 File: figures/ex1_new/res_H.png Graphic file (type png)
 <use figures/ex1_new/res_H.png>
-Package pdftex.def Info: figures/ex1_new/res_H.png  used on input line 833.
+Package pdftex.def Info: figures/ex1_new/res_H.png  used on input line 837.
 (pdftex.def)             Requested size: 166.67154pt x 88.30006pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/ex1_new/enorm.png, id=620, 2890.8pt x 1529.715pt>
+<figures/ex1_new/enorm.png, id=616, 2890.8pt x 1529.715pt>
 File: figures/ex1_new/enorm.png Graphic file (type png)
 <use figures/ex1_new/enorm.png>
-Package pdftex.def Info: figures/ex1_new/enorm.png  used on input line 844.
+Package pdftex.def Info: figures/ex1_new/enorm.png  used on input line 848.
 (pdftex.def)             Requested size: 166.67154pt x 88.18434pt.
-<figures/ex1_new/enorm_H.png, id=621, 2890.8pt x 1531.7225pt>
+<figures/ex1_new/enorm_H.png, id=617, 2890.8pt x 1531.7225pt>
 File: figures/ex1_new/enorm_H.png Graphic file (type png)
 <use figures/ex1_new/enorm_H.png>
-Package pdftex.def Info: figures/ex1_new/enorm_H.png  used on input line 850.
+Package pdftex.def Info: figures/ex1_new/enorm_H.png  used on input line 854.
 (pdftex.def)             Requested size: 166.67154pt x 88.30006pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20 <./figures/ex1_new/abundance.png (PNG copy)> <./figures/ex1_new/abundance_H
-.png (PNG copy)> <./figures/ex1_new/x1.png (PNG copy)> <./figures/ex1_new/x1_H.
-png (PNG copy)>]
+[20]
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
-[21 <./figures/ex1_new/lambda_max.png (PNG copy)> <./figures/ex1_new/lambda_max
-_H.png (PNG copy)> <./figures/ex1_new/res.png (PNG copy)> <./figures/ex1_new/re
-s_H.png (PNG copy)>] [22 <./figures/ex1_new/enorm.png (PNG copy)> <./figures/ex
-1_new/enorm_H.png (PNG copy)>]
-<figures/ex2/prey_abundance.png, id=666, 2890.8pt x 1523.6925pt>
+[21 <./figures/ex1_new/abundance.png (PNG copy)> <./figures/ex1_new/abundance_H
+.png (PNG copy)> <./figures/ex1_new/x1.png (PNG copy)> <./figures/ex1_new/x1_H.
+png (PNG copy)>] [22 <./figures/ex1_new/lambda_max.png (PNG copy)> <./figures/e
+x1_new/lambda_max_H.png (PNG copy)> <./figures/ex1_new/res.png (PNG copy)> <./f
+igures/ex1_new/res_H.png (PNG copy)>]
+<figures/ex2/prey_abundance.png, id=669, 2890.8pt x 1523.6925pt>
 File: figures/ex2/prey_abundance.png Graphic file (type png)
 <use figures/ex2/prey_abundance.png>
-Package pdftex.def Info: figures/ex2/prey_abundance.png  used on input line 909
+Package pdftex.def Info: figures/ex2/prey_abundance.png  used on input line 913
 .
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_abundance_H.png, id=667, 2890.8pt x 1523.6925pt>
+<figures/ex2/prey_abundance_H.png, id=670, 2890.8pt x 1523.6925pt>
 File: figures/ex2/prey_abundance_H.png Graphic file (type png)
 <use figures/ex2/prey_abundance_H.png>
 Package pdftex.def Info: figures/ex2/prey_abundance_H.png  used on input line 9
-15.
+19.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/pred_abundance.png, id=668, 2890.8pt x 1523.6925pt>
+<figures/ex2/pred_abundance.png, id=671, 2890.8pt x 1523.6925pt>
 File: figures/ex2/pred_abundance.png Graphic file (type png)
 <use figures/ex2/pred_abundance.png>
-Package pdftex.def Info: figures/ex2/pred_abundance.png  used on input line 926
+Package pdftex.def Info: figures/ex2/pred_abundance.png  used on input line 930
 .
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/pred_abundance_H.png, id=669, 2890.8pt x 1523.6925pt>
+<figures/ex2/pred_abundance_H.png, id=672, 2890.8pt x 1523.6925pt>
 File: figures/ex2/pred_abundance_H.png Graphic file (type png)
 <use figures/ex2/pred_abundance_H.png>
 Package pdftex.def Info: figures/ex2/pred_abundance_H.png  used on input line 9
-32.
-(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_x1.png, id=670, 2890.8pt x 1523.6925pt>
-File: figures/ex2/prey_x1.png Graphic file (type png)
-<use figures/ex2/prey_x1.png>
-Package pdftex.def Info: figures/ex2/prey_x1.png  used on input line 943.
-(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_x1_H.png, id=671, 2890.8pt x 1523.6925pt>
-File: figures/ex2/prey_x1_H.png Graphic file (type png)
-<use figures/ex2/prey_x1_H.png>
-Package pdftex.def Info: figures/ex2/prey_x1_H.png  used on input line 949.
-(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_x2.png, id=672, 2890.8pt x 1523.6925pt>
-File: figures/ex2/prey_x2.png Graphic file (type png)
-<use figures/ex2/prey_x2.png>
-Package pdftex.def Info: figures/ex2/prey_x2.png  used on input line 977.
-(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_x2_H.png, id=673, 2890.8pt x 1523.6925pt>
-File: figures/ex2/prey_x2_H.png Graphic file (type png)
-<use figures/ex2/prey_x2_H.png>
-Package pdftex.def Info: figures/ex2/prey_x2_H.png  used on input line 983.
+36.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/ex2/prey_lambda_max.png, id=674, 2890.8pt x 1523.6925pt>
+<figures/ex2/prey_x1.png, id=673, 2890.8pt x 1523.6925pt>
+File: figures/ex2/prey_x1.png Graphic file (type png)
+<use figures/ex2/prey_x1.png>
+Package pdftex.def Info: figures/ex2/prey_x1.png  used on input line 947.
+(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
+<figures/ex2/prey_x1_H.png, id=674, 2890.8pt x 1523.6925pt>
+File: figures/ex2/prey_x1_H.png Graphic file (type png)
+<use figures/ex2/prey_x1_H.png>
+Package pdftex.def Info: figures/ex2/prey_x1_H.png  used on input line 953.
+(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/ex2/prey_x2.png, id=675, 2890.8pt x 1523.6925pt>
+File: figures/ex2/prey_x2.png Graphic file (type png)
+<use figures/ex2/prey_x2.png>
+Package pdftex.def Info: figures/ex2/prey_x2.png  used on input line 981.
+(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
+<figures/ex2/prey_x2_H.png, id=676, 2890.8pt x 1523.6925pt>
+File: figures/ex2/prey_x2_H.png Graphic file (type png)
+<use figures/ex2/prey_x2_H.png>
+Package pdftex.def Info: figures/ex2/prey_x2_H.png  used on input line 987.
+(pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/ex2/prey_lambda_max.png, id=677, 2890.8pt x 1523.6925pt>
 File: figures/ex2/prey_lambda_max.png Graphic file (type png)
 <use figures/ex2/prey_lambda_max.png>
 Package pdftex.def Info: figures/ex2/prey_lambda_max.png  used on input line 10
-11.
+15.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_lambda_max_H.png, id=675, 2890.8pt x 1523.6925pt>
+<figures/ex2/prey_lambda_max_H.png, id=678, 2890.8pt x 1523.6925pt>
 File: figures/ex2/prey_lambda_max_H.png Graphic file (type png)
 <use figures/ex2/prey_lambda_max_H.png>
 Package pdftex.def Info: figures/ex2/prey_lambda_max_H.png  used on input line 
-1017.
+1021.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/ex2/prey_res.png, id=676, 2890.8pt x 1523.6925pt>
+<figures/ex2/prey_res.png, id=679, 2890.8pt x 1523.6925pt>
 File: figures/ex2/prey_res.png Graphic file (type png)
 <use figures/ex2/prey_res.png>
-Package pdftex.def Info: figures/ex2/prey_res.png  used on input line 1045.
+Package pdftex.def Info: figures/ex2/prey_res.png  used on input line 1049.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/prey_res_H.png, id=677, 2890.8pt x 1523.6925pt>
+<figures/ex2/prey_res_H.png, id=680, 2890.8pt x 1523.6925pt>
 File: figures/ex2/prey_res_H.png Graphic file (type png)
 <use figures/ex2/prey_res_H.png>
-Package pdftex.def Info: figures/ex2/prey_res_H.png  used on input line 1051.
+Package pdftex.def Info: figures/ex2/prey_res_H.png  used on input line 1055.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/ex2/pred_res.png, id=678, 2890.8pt x 1523.6925pt>
+<figures/ex2/pred_res.png, id=681, 2890.8pt x 1523.6925pt>
 File: figures/ex2/pred_res.png Graphic file (type png)
 <use figures/ex2/pred_res.png>
-Package pdftex.def Info: figures/ex2/pred_res.png  used on input line 1062.
+Package pdftex.def Info: figures/ex2/pred_res.png  used on input line 1066.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
-<figures/ex2/pred_res_H.png, id=679, 2890.8pt x 1523.6925pt>
+<figures/ex2/pred_res_H.png, id=682, 2890.8pt x 1523.6925pt>
 File: figures/ex2/pred_res_H.png Graphic file (type png)
 <use figures/ex2/pred_res_H.png>
-Package pdftex.def Info: figures/ex2/pred_res_H.png  used on input line 1068.
+Package pdftex.def Info: figures/ex2/pred_res_H.png  used on input line 1072.
 (pdftex.def)             Requested size: 166.67154pt x 87.83716pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -844,27 +851,25 @@ Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
-[23 <./figures/ex2/prey_abundance.png (PNG copy)> <./figures/ex2/prey_abundance
-_H.png (PNG copy)> <./figures/ex2/pred_abundance.png (PNG copy)> <./figures/ex2
-/pred_abundance_H.png (PNG copy)> <./figures/ex2/prey_x1.png (PNG copy)> <./fig
-ures/ex2/prey_x1_H.png (PNG copy)>] [24 <./figures/ex2/prey_x2.png (PNG copy)> 
-<./figures/ex2/prey_x2_H.png (PNG copy)> <./figures/ex2/prey_lambda_max.png (PN
-G copy)> <./figures/ex2/prey_lambda_max_H.png (PNG copy)>] (./ex_article.bbl
+[23 <./figures/ex1_new/enorm.png (PNG copy)> <./figures/ex1_new/enorm_H.png (PN
+G copy)> <./figures/ex2/prey_abundance.png (PNG copy)> <./figures/ex2/prey_abun
+dance_H.png (PNG copy)>] [24 <./figures/ex2/pred_abundance.png (PNG copy)> <./f
+igures/ex2/pred_abundance_H.png (PNG copy)> <./figures/ex2/prey_x1.png (PNG cop
+y)> <./figures/ex2/prey_x1_H.png (PNG copy)>] (./ex_article.bbl
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
 ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
-[25 <./figures/ex2/prey_res.png (PNG copy)> <./figures/ex2/prey_res_H.png (PNG 
-copy)> <./figures/ex2/pred_res.png (PNG copy)> <./figures/ex2/pred_res_H.png (P
-NG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26])
+[25 <./figures/ex2/prey_x2.png (PNG copy)> <./figures/ex2/prey_x2_H.png (PNG co
+py)> <./figures/ex2/prey_lambda_max.png (PNG copy)> <./figures/ex2/prey_lambda_
+max_H.png (PNG copy)>] [26 <./figures/ex2/prey_res.png (PNG copy)> <./figures/e
+x2/prey_res_H.png (PNG copy)> <./figures/ex2/pred_res.png (PNG copy)> <./figure
+s/ex2/pred_res_H.png (PNG copy)>])
 \tf@thm=\write4
 \openout4 = `ex_article.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1090.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1094.
 
 Overfull \hbox (169.27173pt too wide) has occurred while \output is active
 [] \OT1/cmr/m/n/8 MODELING THE PROCESS OF SPECIATION USING A MULTI-SCALE FRAMEW
@@ -872,20 +877,20 @@ ORK INCLUDING A POSTERIORI ERROR ESTIMATES []|
  []
 
 [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1090.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1094.
  (./ex_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1090.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1090.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1094.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1094.
 
 Package rerunfilecheck Info: File `ex_article.out' has not changed.
-(rerunfilecheck)             Checksum: 908E28AFBBCBA1361D8AE0D72FD0F279;2339.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1090.
+(rerunfilecheck)             Checksum: 2E422EBF8FFC3EE59B6F26E343CD88BC;2339.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1094.
  ) 
 Here is how much of TeX's memory you used:
- 13336 strings out of 482527
- 215839 string characters out of 5948379
- 604403 words of memory out of 5000000
- 26328 multiletter control sequences out of 15000+600000
+ 13339 strings out of 482527
+ 215882 string characters out of 5948379
+ 603403 words of memory out of 5000000
+ 26330 multiletter control sequences out of 15000+600000
  544366 words of font info for 68 fonts, out of 8000000 for 9000
  1969 hyphenation exceptions out of 8191
  51i,18n,48p,2347b,584s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -909,10 +914,10 @@ ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on ex_article.pdf (27 pages, 3656073 bytes).
+Output written on ex_article.pdf (27 pages, 3657976 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 743 compressed objects within 8 object streams
- 271 named destinations out of 1000 (max. 500000)
+ 841 PDF objects out of 1000 (max. 8388607)
+ 748 compressed objects within 8 object streams
+ 272 named destinations out of 1000 (max. 500000)
  408 words of extra memory for PDF output out of 10000 (max. 10000000)
 
