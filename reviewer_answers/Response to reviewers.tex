@@ -117,17 +117,19 @@ AUTHOR answer: This has been corrected. We searched for other instances of "diff
 \item
 Since g is the diffusion tensor. It is assumed to be symmetric (Assumption 3.1). Of course, this symmetry facilitates the mathematical treatment with respect to well-posedness and error estimation. It is said that in the manuscript that Assumptions 3.1 follow from biology. Could there be any biological application cases where g is nonsymmetric? \\
 
-AUTHOR answer:
+AUTHOR answer: 
+%Jeg tror ikke vi trenger symmetri, vi trenger sannsynligvis bare at den er positiv definit. Symmetri gir reelle egenverdier, og jeg har alltid tenkt at det var naturlig. Men nå som jeg reflekterer over det er det kanskje mulig (alt er mulig i biologi) med komplekse egenverdier, så lenge den reelle parten er positiv. 
 
 \item
 Regarding the boundary condition that n vanishes on the boundary of the trait space (assumung that the trait space is 'large enough'), one could also relax this BC by considering g grad n + A n = 0. Although this BC would relax that n = 0, one has to fiddle around with the A-parameter. Do you think that this alternative BC could do a better job?
 
 AUTHOR answer:
+%For finite domains, it is true that this is possible. I think it suffices to answer that we agree with the reviewer that this is conceptually an option, but we prefer to avoid introducing more (spatially dependent) parameter functions, and therefore retain the exposition with zero BCs. 
 
 \item
 Regarding the modelling part. The g-tensor for diffusion is based on 'ordinary' diffusion in which random changes are gradual. In many biological systems, mutations could give large, sudden changes over time, which could be modelled using Levy-jump processes. Then one has to incorporate fractional derivatives. Perhaps the Authors could comment on this. (I am not asking the Authors to carry out the analysis for this case, that would really be too much, the question is just meant to be philosophical).
 
-AUTHOR answer:
+AUTHOR answer: Yes, we can include a comment on fractional derivatives. \red{TODO}
 
 \item
 The multi-species model models the transition between species, and in a short subsection (2.3), the relation between the multi-species model and the polultion level model is presented. What I miss om the multi-species model is the actual evolutionary part of the process. There is no random part in this model, which does exist in the population level model through the volatility (diffusion) part. Should not the Authors include a Wiener process (or Levy process to account for jump processes) here (to allow random walk)? Now the approach seems entirely deterministic.
@@ -211,7 +213,9 @@ This manuscript is concerned with a mathematical modelling for speciation using 
 The authors discuss and propose a model for the speciation processes leading to new species. To do so, they make use of a discretized version of the above equations. The discussions on the speciation processes seems to be highly related to the choice of the discrete system and in particular on the reconstruction operator. No connection with the original continuous system is clearly explained neither how it depends on the discretization.
 Speciation is modeled in term of clustering in the trait space. Does it depend on the traits kept in the model?
 
-AUTHOR answer:
+AUTHOR answer: 
+
+%Oi. Denne revieweren har ikke forstått noenting. Jeg foreslår at vi høfflig svarer at vi bruker konvergent diskretiseringsmetode, og at kvaliteten på rekonstruksjonsoperatoren styres av a posteriori feilestimatene. 
 
 \item
 From a modelling view point, how do you choose the selection function $\alpha=\alpha(x,y,t)$? How is it related to the coefficients $A_{i,j}$ in (2.5a)? How the multi-scale parameters are coupled?
