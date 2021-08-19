@@ -19,76 +19,7 @@
 \usepackage{color}
 \newcommand{\red}{\textcolor{red}}
 
-%\renewcommand{\topmargin}{-36pt}
-%\renewcommand{\headheight}{36pt}
 
-
-%\newcommand{\beginproof}{{\bf Proof}}
-%\newcommand{\finishedproof}{\hfill {\bf Q. E. D.}}
-%
-%\newcommand{\gr}[1]{\ensuremath{\nabla_{\bf #1}}} %gradient wrt a vector
-%\newcommand{\ve}[1]{\ensuremath{\bf{ #1}}}				%bold vectors in math mode
-%\newcommand{\bg}[1]{\ensuremath{\boldsymbol{#1}}} %bold greek symbols
-%
-%\newcommand{\ds}{\displaystyle}
-%\newcommand{\R}{\mathbb{R}}
-%\newcommand{\N}{\mathbb{N}}
-%
-%
-%
-%\def\l2{L^2(\Omega)}
-%\def\ha1{H^1(\Omega)}
-%\def\h10{H^1_0(\Omega)}
-%\def\hdiv{H(\mathrm{div}; \Omega)}
-
-%\def\R{{\rm I\kern-.17em R}}
-%\define\ker
-%sonstige
-%\def\o{\Omega}
-%\def\into{\int_\Omega}
-%\def\normala{\overline{n}}
-%\def\oq{\overline{{\bf q}}}
-%\def\oc{\overline{c}}
-%\def\ocQ{\overline{c {\bf Q} }}
-%\def\oQ{\overline{ {\bf Q} }}
-%\def\bun{\overline{{\bf u}}^n}
-%\def\osn{\overline{{s}}^n}
-%\def\opn{\overline{{p}}^n}
-%\def\othetan{\overline{\Theta}^n}
-%\def\oqn{\overline{{\bf q}}^n}
-%\def\oqk{\overline{{\bf q}}^k}
-%
-%\def\bq{{\bf q}}
-%\def\bv{{\bf v}}
-%\def\bQ{{\bf Q}}
-%\def\be{{\bf e}}
-%\def\bx{{\bf x}}
-%\def\bu{{\bf u}}
-%\def\bff{{\bf f}}
-%\def\ov{\overline{{\bf v}}}
-%\newcommand{\ds}{\displaystyle}
-%\newcommand{\dfrac}[2]{\frac{ \ds #1}{\ds #2}}
-%\newcommand{\ra}{\rangle}
-%\newcommand{\la}{\langle}
-%\newtheorem{problem}{\sc \bf Problem}[section]
-%\newtheorem{proposition}{\sc \bf Proposition}[section]
-%\newtheorem{remark}{\bf Remark}[section]
-%\newtheorem{theorem}{\bf Theorem}[section]
-%\newtheorem{lemma}{\bf Lemma}[section]
-
-\newcommand{\Wcal}{\mathcal{W}}
-\newcommand{\Ucal}{\mathcal{U}}
-\newcommand{\Pcal}{\mathcal{P}}
-\newcommand{\Tcal}{\mathcal{T}}
-\newcommand{\Rcal}{\mathcal{R}}
-\newcommand{\Acal}{\mathcal{A}}
-\newcommand{\Scal}{\mathcal{S}}
-\newcommand{\Bcal}{\mathcal{B}}
-\newcommand{\Ccal}{\mathcal{C}}
-\newcommand{\Xcal}{\mathcal{X}}
-\newcommand{\Jcal}{\mathcal{J}}
-\newcommand{\Mcal}{\mathcal{M}}
-\newcommand{\Hcal}{\mathcal{H}}
 
 \let\phi\varphi
 \begin{document}
@@ -118,23 +49,29 @@ AUTHOR answer: This has been corrected. We searched for other instances of "diff
 Since g is the diffusion tensor. It is assumed to be symmetric (Assumption 3.1). Of course, this symmetry facilitates the mathematical treatment with respect to well-posedness and error estimation. It is said that in the manuscript that Assumptions 3.1 follow from biology. Could there be any biological application cases where g is nonsymmetric? \\
 
 AUTHOR answer: 
-%Jeg tror ikke vi trenger symmetri, vi trenger sannsynligvis bare at den er positiv definit. Symmetri gir reelle egenverdier, og jeg har alltid tenkt at det var naturlig. Men naa som jeg reflekterer over det er det kanskje mulig (alt er mulig i biologi) med komplekse egenverdier, saa lenge den reelle parten er positiv. 
+In thermodynamical systems, whenever sub-scale stochastic processes are modeled as diffusive on a larger scale, one can typically establish that diffusion tensor is symmetric and positive definite due to Onsager's reciprocal relations. To be fair, we are not aware of any analysis establishing the validity of Onsager's reciprocal relations in the current context, and it is conceptually possible that the diffusion tensor might be nonsymmetric. However, we are not aware of any biological system in which this is the case. 
+
+A different perspective on symmmetry is that it implies that there exists a coordinate map of the trait space such that diffusion is isotropic. Conceptually, one could imagine this map being onto the genetic space, and argue that mutations of genes are all equiprobable and thus isotropic. If one accepts this perspective, then the symmetry of the diffusion tensor is a consequence of the pullback of the mapping.  
+
+In other words, we strongly believe that the symmetry of the diffusion tensor is really symmetric, but in absence of a conclusive analysis, we have updated the language in the manuscript to be less absolute with respect to this point. 
+
 
 \item
-Regarding the boundary condition that n vanishes on the boundary of the trait space (assumung that the trait space is 'large enough'), one could also relax this BC by considering g grad n + A n = 0. Although this BC would relax that n = 0, one has to fiddle around with the A-parameter. Do you think that this alternative BC could do a better job?
+Regarding the boundary condition that n vanishes on the boundary of the trait space (assuming that the trait space is 'large enough'), one could also relax this BC by considering g grad n + A n = 0. Although this BC would relax that n = 0, one has to fiddle around with the A-parameter. Do you think that this alternative BC could do a better job?
 
 AUTHOR answer: 
-%For finite domains, it is true that this is possible. I think it suffices to answer that we agree with the reviewer that this is conceptually an option, but we prefer to avoid introducing more (spatially dependent) parameter functions, and therefore retain the exposition with zero BCs. 
+We agree that this is a possible, and most likely the a posteriori analysis would adapt naturally to this approach. However, this introduces a coefficient that most likely is variable along the full boundary of the local domain. As it is anyway a necessary conceptual assumption that a species is relatively local in trait space, we believe that it is conceptually more natural to capture the whole species by introducing a sufficiently large local domain such that zero BCs are satisfactory. 
 
 \item
 Regarding the modelling part. The g-tensor for diffusion is based on 'ordinary' diffusion in which random changes are gradual. In many biological systems, mutations could give large, sudden changes over time, which could be modelled using Levy-jump processes. Then one has to incorporate fractional derivatives. Perhaps the Authors could comment on this. (I am not asking the Authors to carry out the analysis for this case, that would really be too much, the question is just meant to be philosophical).
 
-AUTHOR answer: 
+AUTHOR answer: Yes, we agree, conceptually fractional derivatives (in place of the gradient operator) can be an attractive modeling option. We have included a comment to this effect. 
 
 \item
 The multi-species model models the transition between species, and in a short subsection (2.3), the relation between the multi-species model and the polultion level model is presented. What I miss om the multi-species model is the actual evolutionary part of the process. There is no random part in this model, which does exist in the population level model through the volatility (diffusion) part. Should not the Authors include a Wiener process (or Levy process to account for jump processes) here (to allow random walk)? Now the approach seems entirely deterministic.
 
-AUTHOR answer: The diffusion (evolutionary part) enters the species-level model through equations (2.5c) and (2.6d), i.e., $V_{0,i} := 2g_i$.
+AUTHOR answer: It is correct that the model considered is fully deterministic. We consider this as a question of modeling scales (with the analogy to particle and Boltzmann models for gas dynamics): Deterministic mean-field theories are suitable at sufficiently large scales, which in this context implies that the population densities sufficiently large that the full stochastic process is sampled. Conversely, if small populations are considered (such as rare species, or similar), the particular instances of the stochastic process will be essential, and stochastic equations are a natural modeling framework. 
+
 
 \item
 Section 3.3.4, regarding uniqueness. I think that the Authors should add that relation (3.7c) (monotone) makes $||R^k||$ convex, which then proves uniqueness. Formally, the Authors only say that $\phi = n^k$ makes $||R^k||$ zero (which is the minimum), but this formally does not yet exclude any other possible minima.
@@ -149,11 +86,17 @@ AUTHOR answer: This has been corrected.
 \item
 Your analysis is also built on the existence of statistical moments, hence in the case of a Cauchy distribution (which has a very 'normal' appearance), the model may lead to problems. It could be interesting to do a numerical experiment with a Cauchy distribution function. ($f(x) = 1/\pi \cdot 1 / (x^2 + 1)$ is the standard Cauchy distribution, which has no moments (average, standard deviation ...).
 
-AUTHOR answer: The derivation of the species level model from the population level model rests on two fundamental assumptions; (1) that distinct species can be identified at all times over the global population distribution (i.e., as compactly supported, non-overlapping sub-distributions), and (2) that these sub-distributions are of a known statistical quality (in this case, the Gaussian/normal distribution). As discussed in [1] (where the species level model is derived), the choice of the Gaussian was to a certain degree due to convenience (although individual traits are commonly assumed to follow a normal distribution in the biological literature), hence other statistical distributions could also be accomodated (at the cost of an increasingly complex calculation/notation, see e.g., page 5-6 in [1] where the possibility of using the uniform distribution is briefly discussed). However, for the exact reasons given in your comment, the Cauchy distribution is not a possible choice, although Cauchy distributions do not pose a problem in terms of the population level model. \\
+AUTHOR answer: The reviewer raises a subtle point which essentially asks how traits should be measured at the species level.
 
-In the manuscript we emphasized the fact that speciation events will invalidate the species level model (violation of assumption (1)), but it may also be invalidated by the species distributions being of an unknown quality (or, with non-existing moments, e.g., Cauchy), hence violating assumption (2). It appears we have neglected to mention this. In the fifth paragraph of the introduction (pages 2-3), where we discuss the species and population level models, we have added a few sentences outlining the above point concerning assumption (2). We have also added in section (2.3) that here $n$ should be smooth enough for these moments to exist.\\
+The derivation of the species level model from the population level model rests on two fundamental assumptions; (1) that distinct species can be identified at all times over the global population distribution (i.e., as compactly supported, non-overlapping sub-distributions), and (2) that these sub-distributions are of a known statistical quality (in this case, the Gaussian/normal distribution). As discussed in [1] (where the species level model is derived), the choice of the Gaussian was to a certain degree due to convenience (although individual traits are commonly assumed to follow a normal distribution in the biological literature), hence other statistical distributions could also be accommodated (at the cost of an increasingly complex calculation/notation, see e.g., page 5-6 in [1] where the possibility of using the uniform distribution is briefly discussed). However, for the exact reasons given in your comment, the Cauchy distribution is not a possible choice, although Cauchy distributions do not pose a problem in terms of the population level model. \\
 
-%These assumptions may be quite restrictive when modeling an eco-evolutionary system, but such is the cost when averaging the global trait-dependent population distribution/density into a state vector (perhaps coupling the population and species levels in a multi-scale framework might be worth a try...).  \\
+However, the question about the shape of the distribution is somewhat misleading: The a posteriori error estimates are intended to assess the validity of the (reduced) species level model, be it good or bad. It becomes clear, by applying any monotone transformation of the axis of the trait space (such as e.g., the logarithm), that in the process of setting up the model, one makes a choice as to how to measure traits. Most classically, one can measure the trait "weight" on a linear or logarithmic scale, and even on a cube-root scale (via the proxy variable "length"). Clearly, the trait distribution will not be Gaussian for more than at most one of these choices. With a poor choice of scale for a trait, where e.g., the trait follows a Cauchy distribution, the species level model will in general be poor, and conceptually the a posteriori error estimates will indicate that the population-level model should always be applied, and no multi-scale algorithm is possible. 
+
+To a certain extent, this is completely analogous to what we see during the speciation event. At this point, the distribution becomes far from Gaussian, and the error estimates indicate that the species level model is not suitable. 
+
+In practice, this implies that for any real modeling of a real physical system, one should advice the biologist to choose a measurement scale for which traits are observed to be close to normally distributed, and provide a warning that if this advice is not heeded, then disappointing results can come from the subsequent analysis. 
+
+We have added comments to this effect in the fifth paragraph of the introduction (pages 2-3), where we discuss the species and population level models, we have added a few sentences outlining the above point concerning assumption (2). We have also added in section (2.3) that here $n$ should be smooth enough for these moments to exist.\\
 
 
 \item
@@ -211,9 +154,9 @@ This manuscript is concerned with a mathematical modelling for speciation using 
 The authors discuss and propose a model for the speciation processes leading to new species. To do so, they make use of a discretized version of the above equations. The discussions on the speciation processes seems to be highly related to the choice of the discrete system and in particular on the reconstruction operator. No connection with the original continuous system is clearly explained neither how it depends on the discretization.
 Speciation is modeled in term of clustering in the trait space. Does it depend on the traits kept in the model?
 
-AUTHOR answer: Indeed, there is missing a discussion on in what sense the time-discrete system relates to the original continuous one. To rectify this, we have rewritten the first paragraph of Section 3 (p. 7) where we elaborate on this.
+AUTHOR answer: Indeed, there was missing a discussion on in what sense the time-discrete system relates to the original continuous one. To rectify this, we have rewritten the first paragraph of Section 3 (p. 7) where we elaborate on this. Hopefully, this relation is now clear, and the impression that the results are highly related to the time-discrete formulation (which is simply a standard backward Euler approximation to the continuous system), has been rectified.
 
-%\red{Oi. Denne revieweren har ikke forstaatt noenting. Jeg foreslaar at vi hofflig svarer at vi bruker konvergent diskretiseringsmetode, og at kvaliteten paa rekonstruksjonsoperatoren styres av a posteriori feilestimatene.}
+As to the clustering in trait space: Yes this depends not just on the traits chosen to model the system, but also on their scale of measurement. We have added some discussion to this effect in the introduction relating also to a comment by the first reviewer. 
 
 \item
 From a modelling view point, how do you choose the selection function $\alpha=\alpha(x,y,t)$? How is it related to the coefficients $A_{i,j}$ in (2.5a)? How the multi-scale parameters are coupled?
